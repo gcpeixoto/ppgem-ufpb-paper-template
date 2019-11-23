@@ -19,9 +19,13 @@ calls up the `ppgem.cls` class and accepts two option arguments:
 
 Title, authors and affiliations are called exactly in the same way as `\authblk` package's commands.
 
+#### Title 
+
+Use capital letters for nouns and small letters for articles, pronouns, and prepositions.  
+
 ```latex
 % this is the title
-\title{How to prepare your short paper for the scientific writing session}
+\title{How to Prepare your Short Paper for the Scientific Writing Session}
 
 
 % this is the author block
