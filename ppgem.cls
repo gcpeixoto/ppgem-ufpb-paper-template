@@ -160,7 +160,7 @@
 	\\ \url{www.ct.ufpb.br/ppgem} } 
 \end{minipage} 
 \smallskip 
-\hrulefill
+\textcolor{NavyBlue}{\rule{\textwidth}{0.8mm}}
 \end{minipage}
 }
 
