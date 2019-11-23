@@ -12,55 +12,47 @@ The line
 ```
 calls up the `ppgem.cls` class and accepts two option arguments: 
 
-- `date`: prints the current date on the header.
-- `nodate`: doesn't print.
+- `date`/`nodate`: activate/deactivate the stamp of the event date on the header.
+- `links`/`nolinks`: activate/deactivate highlights links.
 
 ### Data fields 
 
-#### Title
+Title, authors and affiliations are called exactly in the same way as `\authblk` package's commands.
 
-- `\Title`: adds the title of your paper.
+```latex
+% this is the title
+\title{How to prepare your short paper for the scientific writing session}
 
-Use:
 
-``` latex
-\Title{Preparing your abstract to be presented at PPGEM's seminars: a first tutorial}
+% this is the author block
+% template: \author[n]{Name} 
+% The number n =1,2,3,... agrees with the affiliation index
+% e.g. 
+%\author[1]{Name 1}
+%\author[1]{Name 2}
+%\author[2]{Name 3}
+% etc.
+
+\author[1]{Clausius, E. P.}
+\author[1]{Quintus, N. P.}
+\author[1]{Betis, H. D.}
+ 
+% The last author name is reserved for the advisor
+\author[1,*]{Venius, O. P.}
+
+
+% For authors and co-authors from the same institution, it suffices a unique \affil[1]
+% \affil[1]{Postgraduate Program in Mechanical Engineering, Federal University of Paraíba.}
+
+% e-mail
+% Use a dummy affil for author's e-mails
+\affil[ ]{clausius@ct.ufpb.br, % 
+	  quintus@ct.ufpb.br, %
+	  betis@ct.ufpb.br}
+
+% advisor's e-mail
+\affil[*]{\textbf{Advisor:} venius@ct.ufpb.br}
 ```
-
-#### Author and advisor names
-
-- `\AuthorName`: author's name 
-- `\CorrEmail`: corresponding e-mail
-- `\AdvisorName`: your advisor's name 
-- `\CoAdvisorName`: your co-advisor's name
-- `\Year`: year to which the paper is attached in the PPG-EM seminar series
-
-Use: 
-
-``` latex
-\AuthorName{Medeiros, V.S.}
-\CorrEmail{gustavo.oliveira@uerj.br}
-\AdvisorName{Gustavo Oliveira}
-\CoAdvisorName{Moisés Dantas} 
-\Year{2019}
-
-```
-
-#### Institution
-
-- `\InstA`: default is UFPB, as it should be (it is always required)
-- `\InstB`: your co-advisor's institution, if any. 
-
-Use: 
-
-``` latex
-\InstA{Federal University of Paraíba} 
-\InstB{Federal University of Pernambuco} 
-```
-*Remarks:*
-
-- If your co-advisor's institution is UFPB, the fields `\CoAdvisorName` and `InstB` are not required.
-- If your co-advisor's institution is not UFPB, the fields `\CoAdvisorName` and `InstB` should be filled in.
 
 #### Keywords 
 
@@ -99,4 +91,4 @@ make clean
 ### Meta
 
 - Authors: 
-  - Prof. Gustavo OLIVEIRA, D.Sc. (maintainer) :[mailto](mailto:gustavo.oliveira@ci.ufpb.br)
+  - Prof. Gustavo OLIVEIRA, Dr. (maintainer) :[mailto](mailto:gustavo.oliveira@ci.ufpb.br)
