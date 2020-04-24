@@ -131,9 +131,9 @@ is a good example of well placed figure. Reference to figures follow the example
 
 \subsection{Tables}
 
-Tables like Table \ref{tbl:1} can also be inserted into your text through the environment \verb|tabular|.
+Tables like \ref{tbl:1} can also be inserted into your text through the environment \verb|tabular|.
 \begin{center}
-\resizebox{\columnwidth}{!}{% fit table into column width, but is modifiable
+\resizebox{\textwidth}{!}{% fit table into text width
   \begin{tabular}{ccc}
     \toprule
 	  & \textbf{lower bound} & \textbf{upper bound}\\
@@ -172,11 +172,17 @@ may be included.
 
 This template supports the \LaTeX package \texttt{siunitx} to deal with SI units. For a complete overview, read the package documentation available on:
 \url{http://tug.ctan.org/macros/latex/exptl/siunitx/siunitx.pdf}. Some useful commands are:
-\verb|\ang|, \verb|\num|, \verb|\si|, \verb|\SI|, and \verb|\SIlist|. For example, the statement 
+\begin{verbatim}
+\ang, \num, \si, \SI, \SIlist
+\end{verbatim}
+For example, the statement 
 \begin{verbatim}
 \SI[mode=text]{1.23}{J.mol^{-1}.K^{-1}}
 \end{verbatim}
-will be read as \SI[mode=text]{1.23}{J.mol^{-1}.K^{-1}}. Try other variations by looking at the documentation.
+will be read as 
+\begin{center}
+\SI[mode=text]{1.23}{J.mol^{-1}.K^{-1}}
+\end{center}
 
 %% REFERENCES
 \bibliographystyle{plainnat}

@@ -81,6 +81,8 @@
 \usetikzlibrary{shapes,shadows,arrows}					% shapes
 \RequirePackage{indentfirst}  									% indents paragraph first line
 \RequirePackage{etoolbox}
+\RequirePackage{siunitx}						% SI units
+\RequirePackage{booktabs}						% fancy tables
 
 % LOAD 'microtype' PACKAGE LAST!
 \RequirePackage{microtype} 									% text kerning (ajuste de espaço de caracter)

@@ -1,0 +1,13 @@
+# Version history
+
+## 2.1 (April 2020)
+  - Includes package 'siunitx' and appendix with guidelines. 
+  - Includes package 'booktabs'.
+  - Updates main.tex for 2020 season.
+  - Fixes bad referencing.
+
+## 2.0 (November 2019)
+  - Modified for Scientific Writing Program at PPGEM/UFPB. Completely redesigned.
+
+## 1.0 (2014)
+  - First release at PPGEM/UERJ. 
